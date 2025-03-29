@@ -113,7 +113,7 @@ sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
 ### 2. Create PostgreSQL Database
 ```sql
 sudo -u postgres psql
-CREATE DATABASE student_api;
+CREATE DATABASE student;
 CREATE USER furahini WITH PASSWORD 'furahini';
 GRANT ALL PRIVILEGES ON DATABASE student TO furahini;
 \q

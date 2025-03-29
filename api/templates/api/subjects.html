@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students API</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #333;
+      }
+      .json-container {
+        background-color: #f5f5f5;
+        padding: 1rem;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+      }
+      .api-links {
+        margin-top: 2rem;
+      }
+      .api-links a {
+        margin-right: 1rem;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        background-color: #4285f4;
+        color: white;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Subject API</h1>
+    <div class="api-links">
+      <a href="/students/">Students API</a>
+      <a href="/subjects/">Subjects API</a>
+    </div>
+    <div class="json-container">
+      <pre id="json-display">{{ json_data }}</pre>
+    </div>
+
+    <script>
+      // Format the JSON for better display
+      document.addEventListener("DOMContentLoaded", function () {
+        const jsonData = document.getElementById("json-display").textContent;
+        try {
+          const formattedJson = JSON.stringify(JSON.parse(jsonData), null, 4);
+          document.getElementById("json-display").textContent = formattedJson;
+        } catch (e) {
+          console.error("Error parsing JSON:", e);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -114,8 +114,8 @@ sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
 ```sql
 sudo -u postgres psql
 CREATE DATABASE student_api;
-CREATE USER student_api_user WITH PASSWORD 'your_password';
-GRANT ALL PRIVILEGES ON DATABASE student_api TO student_api_user;
+CREATE USER furahini WITH PASSWORD 'furahini';
+GRANT ALL PRIVILEGES ON DATABASE student TO furahini;
 \q
 ```
 
@@ -130,7 +130,7 @@ sudo systemctl restart nginx
 
 ### Check Gunicorn Logs
 ```bash
-sudo journalctl -u student_api --no-pager
+sudo journalctl -u gurnicorn --no-pager
 ```
 
 ### Check Nginx Logs

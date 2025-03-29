@@ -12,8 +12,6 @@ A RESTful API built with Django and Django REST Framework that provides informat
 - [Database Setup](#database-setup)
 - [Deployment Process](#deployment-process)
 - [Troubleshooting](#troubleshooting)
-- [Maintenance](#maintenance)
-- [License](#license)
 - [Author](#author)
 
 ## Project Overview
@@ -86,12 +84,12 @@ pip install -r requirements.txt
 
 ### 4. Configure `.env` File
 ```bash
-SECRET_KEY=your_secret_key
+SECRET_KEY=django-screet-key
 DEBUG=False
-ALLOWED_HOSTS=your_domain.com,your_server_ip
-DB_NAME=student_api
-DB_USER=student_api_user
-DB_PASSWORD=your_password
+ALLOWED_HOSTS=localhost,16.170.115.244
+DB_NAME=student
+DB_USER=furahini
+DB_PASSWORD=furahini
 DB_HOST=localhost
 DB_PORT=5432
 ```
@@ -139,32 +137,6 @@ sudo journalctl -u student_api --no-pager
 ```bash
 sudo tail -f /var/log/nginx/error.log
 ```
-
-### Check PostgreSQL Connection
-```bash
-sudo -u postgres psql -c "SELECT datname FROM pg_database;"
-```
-
-## Maintenance
-
-### Update the Application
-```bash
-cd /home/ubuntu/api
-git pull
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py collectstatic --noinput
-sudo systemctl restart student_api
-sudo systemctl restart nginx
-```
-
-### Backup PostgreSQL Database
-```bash
-pg_dump -U student_api_user -d student_api > backup.sql
-```
-
-## License
-This project is licensed under the MIT License.
 
 ## Author
 👤 Furahini Kisivani Siyanga

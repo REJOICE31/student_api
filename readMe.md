@@ -32,12 +32,12 @@ This project was developed for the CS 421 Software Deployment and Management cou
 
 ## Project Structure
 ```
-student_api_project/
+student_api/
 │── manage.py                      # Django management script
 │── requirements.txt               # Project dependencies
 │── README.md                      # Documentation
 │
-├── student_api_project/           # Project configuration
+├── student_api/           # Project configuration
 │   ├── settings.py                # Django settings
 │   ├── urls.py                    # Main URL routing
 │   ├── wsgi.py                     # WSGI config

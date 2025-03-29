@@ -121,8 +121,8 @@ GRANT ALL PRIVILEGES ON DATABASE student_api TO student_api_user;
 
 ### 3. Deploy with Gunicorn & Nginx
 ```bash
-sudo systemctl start student_api
-sudo systemctl enable student_api
+sudo systemctl start gurnicorn
+sudo systemctl enable gurnicorn
 sudo systemctl restart nginx
 ```
 

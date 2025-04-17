@@ -176,10 +176,21 @@ This directory (`bash_scripts`) contains automation scripts for managing the stu
 - Will back up the API project and database (to be completed).
 
 ### 🛠 Setup Instructions
-```bash
 cd bash_scripts
-chmod +x *.sh
+1. Upload the scripts to your EC2 instance under `/home/ubuntu/bash_scripts`.
+2. Give all scripts execute permissions:
 
+```bash
+chmod +x /home/ubuntu/bash_scripts/*.sh
+
+## Dependencies
+Dependencies:
+
+curl (for testing API endpoints)
+
+git (for pulling changes)
+
+systemctl (for restarting the web server)
 
 ## Author
 NAME:FURAHINI

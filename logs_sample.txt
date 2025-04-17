@@ -1,0 +1,25 @@
+# server_health.log
+[2025-04-17 17:00:01] Success: Students endpoint is ok with status code 200
+[2025-04-17 17:01:45] Success: Subjects endpoint is ok with status code 200
+
+# backup.log
+[2025-04-17 19:09:38] Starting backup...
+[2025-04-17 19:09:38] Project backup created: /home/ubuntu/backups/api_backup_2025-04-17.tar.gz
+[2025-04-17 19:09:38] Database backup created: /home/ubuntu/backups/db_backup_2025-04-17.sqlite3
+[2025-04-17 19:09:38] Old backups (7+ days) deleted.
+[2025-04-17 19:09:38] Backup process finished.
+[2025-04-17 21:08:38] Starting backup...
+[2025-04-17 21:08:38] Failed to create project backup! (Permission denied)
+[2025-04-17 21:08:38] Failed to backup database! (Permission denied)
+[2025-04-17 21:08:38] Old backups (7+ days) deleted.
+[2025-04-17 21:08:38] Backup process finished.
+[2025-04-17 21:11:10] Starting backup...
+[2025-04-17 21:11:10] Project backup created: /home/ubuntu/backups/api_backup_2025-04-17.tar.gz
+[2025-04-17 21:11:10] Database backup created: /home/ubuntu/backups/db_backup_2025-04-17.sqlite3
+[2025-04-17 21:11:10] Old backups (7+ days) deleted.
+[2025-04-17 21:11:10] Backup process finished.
+
+# update.log
+[2025-04-17 17:07:54] Web server restarted successfully.
+[2025-04-17 17:07:54] Update process completed successfully.
+

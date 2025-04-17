@@ -137,6 +137,25 @@ sudo journalctl -u gurnicorn --no-pager
 ```bash
 sudo tail -f /var/log/nginx/error.log
 ```
+ ### Backup Schemes
+
+1. Full Backup: This scheme backs up all data, regardless of whether it has changed or not.
+
+Advantages: Easy to restore, no need for additional backups.
+
+Disadvantages: Time-consuming and uses a lot of storage.
+
+2. Incremental Backup: This backs up only the changes made since the last backup (whether full or incremental).
+
+Advantages: Faster and requires less storage.
+
+Disadvantages: Restoration requires all incremental backups, which can make it slower.
+
+3. Differential Backup: Backs up the data changed since the last full backup.
+
+Advantages: Faster restoration than incremental backups.
+
+Disadvantages: Requires more storage than incremental backups.
 ## Bash Automation Scripts
 
 This directory (`bash_scripts`) contains automation scripts for managing the student API server:

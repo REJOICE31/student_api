@@ -1,7 +1,7 @@
 # Student API Project
 
 ## Description
-A RESTful API built with Django and Django REST Framework that provides information about students and subjects in a Software Engineering program.
+A RESTful API built with Django and Django REST Framework to manage and serve data about students and subjects in a Software Engineering program.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -12,78 +12,90 @@ A RESTful API built with Django and Django REST Framework that provides informat
 - [Database Setup](#database-setup)
 - [Deployment Process](#deployment-process)
 - [Troubleshooting](#troubleshooting)
+- [Backup Schemes](#backup-schemes)
+- [Bash Automation Scripts](#bash-automation-scripts)
+- [Docker](#docker)
+- [Dependencies](#dependencies)
 - [Author](#author)
 
+---
+
 ## Project Overview
-This project was developed for the CS 421 Software Deployment and Management course at the University of Dodoma.
+This API was created for academic use under the CS 421 Software Deployment and Management course at the University of Dodoma. It allows access to structured data for students and their subjects.
 
 ### Features
-- Retrieve student details and enrolled programs.
-- Fetch subjects categorized by academic year.
-- Secure API access with authentication.
-- PostgreSQL database integration.
+- Fetch all students
+- Fetch all subjects by academic year
+- Simple RESTful interface using Django REST Framework
+- PostgreSQL database
+- Secured access to endpoints
+
+---
 
 ## Technology Stack
-- **Backend:** Django 4.2.7
-- **API Framework:** Django REST Framework 3.14.0
-- **Database:** PostgreSQL
-- **Web Server:** Nginx
-- **WSGI Server:** Gunicorn
+- **Framework**: Django 4.2.7
+- **API**: Django REST Framework 3.14.0
+- **Database**: PostgreSQL
+- **Web Server**: Nginx
+- **WSGI**: Gunicorn
+- **Containerization**: Docker
+
+---
 
 ## Project Structure
 ```
 student_api/
-│── manage.py                      # Django management script
-│── requirements.txt               # Project dependencies
-│── README.md                      # Documentation
-│
-├── student_api/           # Project configuration
-│   ├── settings.py                # Django settings
-│   ├── urls.py                    # Main URL routing
-│   ├── wsgi.py                     # WSGI config
-│
-└── api/                           # Main API application
-    ├── models.py                  # Database models
-    ├── serializers.py             # DRF serializers
-    ├── views.py                   # API views
-    ├── urls.py                    # API URL routing
-    ├── migrations/                # Database migrations
+│── manage.py
+│── requirements.txt
+│── README.md
+├── student_api/
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── api/
+    ├── models.py
+    ├── serializers.py
+    ├── views.py
+    ├── urls.py
+    └── migrations/
 ```
+
+---
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|---------|------------|
-| GET    | `/students/` | Retrieve all students |
-| GET    | `/subjects/` | Retrieve all subjects |
+| Method | Endpoint      | Description           |
+|--------|---------------|-----------------------|
+| GET    | `/students/`  | Retrieve all students |
+| GET    | `/subjects/`  | Retrieve all subjects |
 
-### Students Endpoint
-URL: http://16.170.115.244/students/
+- **Students URL**: http://16.170.115.244/students/  
+- **Subjects URL**: http://16.170.115.244/subjects/
 
-### Subjects Endpoint
-URL: http://16.170.115.244/subjects/
+---
 
 ## Development and Setup
 
-### 1. Clone the Repository
+### Clone the Repo
 ```bash
 git clone https://github.com/REJOICE31/student_api.git
 cd student_api
 ```
 
-### 2. Create a Virtual Environment
+### Create a Virtual Environment
 ```bash
 python3 -m venv env
-source env/bin/activate  # Windows: env\Scripts\activate
+source env/bin/activate
 ```
 
-### 3. Install Dependencies
+### Install Requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure `.env` File
-```bash
+### Environment Setup
+Create a `.env` file:
+```
 SECRET_KEY=django-screet-key
 DEBUG=False
 ALLOWED_HOSTS=localhost,16.170.115.244
@@ -94,24 +106,12 @@ DB_HOST=localhost
 DB_PORT=5432
 ```
 
-### 5. Database Setup
+---
+
+## Database Setup
+
+### PostgreSQL Commands
 ```bash
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver
-```
-
-## Deployment Process (AWS Ubuntu)
-
-### 1. Install Required Packages
-```bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx git
-```
-
-### 2. Create PostgreSQL Database
-```sql
 sudo -u postgres psql
 CREATE DATABASE student;
 CREATE USER furahini WITH PASSWORD 'furahini';
@@ -119,12 +119,32 @@ GRANT ALL PRIVILEGES ON DATABASE student TO furahini;
 \q
 ```
 
-### 3. Deploy with Gunicorn & Nginx
+### Django Migrations
+```bash
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
+
+---
+
+## Deployment Process
+
+### Install Server Dependencies
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx git
+```
+
+### Configure Gunicorn and Nginx
 ```bash
 sudo systemctl start gurnicorn
 sudo systemctl enable gurnicorn
 sudo systemctl restart nginx
 ```
+
+---
 
 ## Troubleshooting
 
@@ -137,63 +157,112 @@ sudo journalctl -u gurnicorn --no-pager
 ```bash
 sudo tail -f /var/log/nginx/error.log
 ```
- ### Backup Schemes
 
-1. Full Backup: This scheme backs up all data, regardless of whether it has changed or not.
+---
 
-Advantages: Easy to restore, no need for additional backups.
+## Backup Schemes
 
-Disadvantages: Time-consuming and uses a lot of storage.
+### Full Backup
+- Backs up entire dataset
+- Easy to restore, takes more space and time
 
-2. Incremental Backup: This backs up only the changes made since the last backup (whether full or incremental).
+### Incremental Backup
+- Only backs up changes since last backup
+- Efficient but complex to restore
 
-Advantages: Faster and requires less storage.
+### Differential Backup
+- Backs up changes since last full backup
+- Faster restore, more space than incremental
 
-Disadvantages: Restoration requires all incremental backups, which can make it slower.
+---
 
-3. Differential Backup: Backs up the data changed since the last full backup.
-
-Advantages: Faster restoration than incremental backups.
-
-Disadvantages: Requires more storage than incremental backups.
 ## Bash Automation Scripts
 
-This directory (`bash_scripts`) contains automation scripts for managing the student API server:
+**Folder:** `/home/ubuntu/bash_scripts`
 
 ### 1. health_check.sh
-- Checks CPU, memory, and disk usage.
-- Verifies web server is running.
-- Tests `/students` and `/subjects` endpoints.
-- Logs to `/var/log/server_health.log`.
+- Checks CPU, memory, and disk usage
+- Confirms application is reachable
+- Logs output to `/var/log/server_health.log`
 
 ### 2. update_server.sh
-- Updates Ubuntu packages.
-- Pulls latest code from GitHub.
-- Restarts the web server.
-- Logs to `/var/log/update.log`.
+- Updates OS packages
+- Pulls latest code from GitHub
+- Restarts Gunicorn or Docker container
+- Logs to `/var/log/update.log`
 
-### 3. backup_api.sh
-- Will back up the API project and database (to be completed).
+### 3. backup_server.sh
+- Creates backups of the project and PostgreSQL database
+- Stores them locally with timestamp
 
-### 🛠 Setup Instructions
-cd bash_scripts
-1. Upload the scripts to your EC2 instance under `/home/ubuntu/bash_scripts`.
-2. Give all scripts execute permissions:
-
+### Make Executable
 ```bash
 chmod +x /home/ubuntu/bash_scripts/*.sh
+```
+
+### Cron Jobs Example
+```bash
+crontab -e
+
+# Run health check every hour
+0 * * * * /home/ubuntu/bash_scripts/health_check.sh
+
+# Run update daily
+0 2 * * * /home/ubuntu/bash_scripts/update_server.sh
+```
+
+---
+
+## Docker
+
+### Build Docker Image
+```bash
+docker build -t rejoice31/student_api_web:latest .
+```
+
+### Run Docker Container With Volumes & Environment Variables
+```bash
+docker run -d -p 8000:8000   --env DB_NAME=student   --env DB_USER=furahini   --env DB_PASSWORD=furahini   --env DB_HOST=host.docker.internal   -v $(pwd):/app   --name student_api_container   rejoice31/student_api_web:latest
+```
+
+### Login to Docker Hub
+```bash
+docker login
+```
+
+### Push Image to Docker Hub
+```bash
+docker push rejoice31/student_api_web:latest
+```
+
+### Pull and Run on Server
+```bash
+sudo apt install docker.io
+sudo docker pull rejoice31/student_api_web:latest
+
+sudo docker run -d -p 8000:8000   --env DB_NAME=student   --env DB_USER=furahini   --env DB_PASSWORD=furahini   --env DB_HOST=host.docker.internal   --name student_api_container   rejoice31/student_api_web:latest
+```
+
+### DockerHub Repository
+[https://hub.docker.com/r/rejoice31/student_api_web](https://hub.docker.com/r/rejoice31/student_api_web)
+
+---
 
 ## Dependencies
-Dependencies:
+- Python 3.x
+- pip
+- PostgreSQL
+- Docker
+- Gunicorn
+- Nginx
+- Git
+- curl
+- cron
 
-curl (for testing API endpoints)
-
-git (for pulling changes)
-
-systemctl (for restarting the web server)
+---
 
 ## Author
-NAME:FURAHINI
-EMAIL: furahinisiyanga31@gmail.com  
-🔗 [GitHub Profile](https://github.com/REJOICE31)
 
+**Name**: Furahini  
+**Email**: furahinisiyanga31@gmail.com  
+**GitHub**: [REJOICE31](https://github.com/REJOICE31)

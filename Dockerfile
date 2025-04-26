@@ -1,25 +1,28 @@
-FROM ubuntu:22.04
-# 1. Use an official Python image
+# Use official Python base image
 FROM python:3.10-slim
 
-# 2. Prevent Python from writing .pyc files
+# Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# Install Python dependencies
-RUN pip install --upgrade pip && pip install -r requirements.txt
-# 3. Set working directory inside the container
+# Set working directory inside container
 WORKDIR /app
 
-# 4. Copy requirement file and install packages
-COPY requirements.txt .
-RUN pip install --upgrade pip && pip install -r requirements.txt
+# Install dependencies (SQLite is built-in, but we need system tools)
+RUN apt-get update && apt-get install -y \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
 
-# 5. Copy the rest of your project files into the container
-COPY . .
+# Copy requirements.txt and install Python packages
+COPY requirements.txt /app/
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
 
-# 6. Expose port 8000
+# Copy project files into container
+COPY . /app/
+
+# Expose the port Django will run on
 EXPOSE 8000
 
-# 7. Run the Django development server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Run Django app using gunicorn
+CMD ["gunicorn", "student_api.wsgi:application", "--bind", "0.0.0.0:8000"]

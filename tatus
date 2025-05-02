@@ -1,0 +1,227 @@
+[33mcommit 9132a551a872e7410312d47e87d05eb7154f110b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Fri May 2 11:13:02 2025 +0300
+
+    docker-compose file modified
+
+[33mcommit 0f29a681e989d75a9949809e26451702421eec31[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Fri May 2 11:06:26 2025 +0300
+
+    folder removed
+
+[33mcommit c11720f36ef2a782e400beb7909fa9119b793469[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Fri May 2 10:58:58 2025 +0300
+
+    front end modified
+
+[33mcommit 22018d143a4d94e4866990f417545fee8550ddb8[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Fri May 2 10:51:43 2025 +0300
+
+    react frontend
+
+[33mcommit d9e4059516abaf4d41141215d3c65987c96a43b8[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 08:51:01 2025 +0300
+
+    file deleted
+
+[33mcommit 647c383026c5bf747323e2cdd52639edc6832ad4[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Sat Apr 26 05:44:54 2025 +0000
+
+    docker logs updated
+
+[33mcommit ff0699bfc31acae70465fe736a93738da0b0f013[m
+Merge: 6c45c3c feaca44
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 08:16:20 2025 +0300
+
+    Merge branch 'master' of https://github.com/REJOICE31/student_api
+
+[33mcommit feaca44208f5608ffe8ab4afa7de6dd571e8412d[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Sat Apr 26 05:15:20 2025 +0000
+
+    dockerfile deleted
+
+[33mcommit 6c45c3cf0e02f4371995d2c33301039545f38dee[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 08:13:43 2025 +0300
+
+    updated Dockerfile
+
+[33mcommit bc4fe4a0d279f59f49198d590072d7cae778f2dc[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 08:03:18 2025 +0300
+
+    updated Dockerfile
+
+[33mcommit 34317290b4f9092737f79c2b02bef29090951b10[m
+Merge: ff93c47 92f7fdb
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 07:52:56 2025 +0300
+
+    Merge branch 'master' of https://github.com/REJOICE31/student_
+    
+    git commit -m "necessary"
+
+[33mcommit ff93c477b3288a3b9dc5478a4d72537f1820ff51[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 07:47:23 2025 +0300
+
+    updated readMe file
+
+[33mcommit 82c1706734be06fe33a843a2868225be83946b43[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 07:46:42 2025 +0300
+
+    the image uploaded
+
+[33mcommit 92f7fdb06adf6f4a261a240ef61b4fb635ad950b[m
+Merge: 886547e cbf7e2e
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Sat Apr 26 04:04:04 2025 +0000
+
+    Merge branch 'master' of github.com:REJOICE31/student_api
+    git commit -m "its necessary"
+
+[33mcommit 886547ea27d5fced6e72a66b421650f47e930b99[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Sat Apr 26 04:01:00 2025 +0000
+
+    docker_logs.txt files are added
+
+[33mcommit cbf7e2e5c305b25210619ca741b1da178d28abfa[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 06:56:30 2025 +0300
+
+    docker_ps.PNG added
+
+[33mcommit 729dba7178c777180f0e0c063b14f37949b2c7ad[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 06:03:05 2025 +0300
+
+    docker-compose.yml created and Dockerfile modified
+
+[33mcommit 22cbab3a8737095bc3542360fda3b5c85503424f[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Apr 26 05:40:59 2025 +0300
+
+    modified Dockerfile
+
+[33mcommit 9ff1ab7faeb799de92fa150dfb3b8ab3de7fde15[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Fri Apr 25 22:59:48 2025 +0300
+
+    created docker file
+
+[33mcommit d9b8ccae14bd3eee0bdb639bcf79c38b03cf6ba8[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 22:15:17 2025 +0000
+
+    logs file added
+
+[33mcommit acee88bc03c78217f2326f004223bd8dad6a8a53[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 22:14:27 2025 +0000
+
+    files updated
+
+[33mcommit eafa41fefc770e501b8f832a9a3eb0f90c3c6832[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 21:28:11 2025 +0000
+
+    Added explanations of dependencies
+
+[33mcommit 7be47fe74b224995a4a051b9e499b5d75cb3a412[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 20:24:13 2025 +0000
+
+    Added explanation of backup schemes
+
+[33mcommit 21ea48b4fd0e80c38b8bb26b141f7bdecfdb013b[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 19:37:25 2025 +0000
+
+    Renamed update.sh to update_server.sh
+
+[33mcommit b72efb2bfe8502a1055b7b42318eaf753ba50638[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 19:23:26 2025 +0000
+
+    backup api added
+
+[33mcommit 8c56035c8069a7736e0dc6b36daba40209db7f6c[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 18:29:04 2025 +0000
+
+    Removed duplicate README files
+
+[33mcommit 302b3025f6e17ff62d354f12c9c152b0fbee0cac[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 18:24:08 2025 +0000
+
+    Updated README file
+
+[33mcommit b84bdb1fba4229b92c13afbaa90a96edb89265f7[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 18:10:12 2025 +0000
+
+    readME file updated
+
+[33mcommit 640b4fe0308b514d72e17780f3bf02b2766bf3e1[m
+Author: Ubuntu <ubuntu@ip-172-31-42-186.eu-north-1.compute.internal>
+Date:   Thu Apr 17 17:39:11 2025 +0000
+
+    Added health_check and update_server scripts
+
+[33mcommit 5e3c76a067538330e88afd1806c796467a888b67[m
+Author: Rejoice <141812186+REJOICE31@users.noreply.github.com>
+Date:   Sat Mar 29 13:52:24 2025 +0300
+
+    Update readMe.md
+
+[33mcommit 0875a8fb3051b0db3368c0a8135aaddb13055400[m
+Author: Rejoice <141812186+REJOICE31@users.noreply.github.com>
+Date:   Sat Mar 29 13:51:23 2025 +0300
+
+    Update readMe.md
+
+[33mcommit 7e675939a1217d131c165eedbc9d50925e185016[m
+Author: Rejoice <141812186+REJOICE31@users.noreply.github.com>
+Date:   Sat Mar 29 13:50:06 2025 +0300
+
+    Update readMe.md
+
+[33mcommit 27cbcfd765364aa4e36c2f06da07ab20e4aeb297[m
+Author: Rejoice <141812186+REJOICE31@users.noreply.github.com>
+Date:   Sat Mar 29 13:44:27 2025 +0300
+
+    Update readMe.md
+
+[33mcommit d667acf04e7afb59b71f4bf5a9e878272eddc607[m
+Author: Rejoice <141812186+REJOICE31@users.noreply.github.com>
+Date:   Sat Mar 29 13:41:39 2025 +0300
+
+    Update readMe.md
+
+[33mcommit f7ac4f444ad06b0ebf0d4aca549dd49250b4cd68[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Mar 29 12:51:33 2025 +0300
+
+    readMe file has been modified
+
+[33mcommit 068313ea7b4babbe2635e045e77afbe9164ed4a7[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Mar 29 11:48:51 2025 +0300
+
+    home page modified
+
+[33mcommit 3971259068c515e75b553f1a94ae6f8ac29c553a[m
+Author: FURAHINI <furahinisiyanga31@gmail.com>
+Date:   Sat Mar 29 03:07:50 2025 +0300
+
+    creating API for students and courses

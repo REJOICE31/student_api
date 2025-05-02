@@ -1,46 +1,13 @@
-version: '3.8'
+version: "3.9"
 
 services:
-  api:
-    build: ./student_api
-    container_name: api
+  web:
+    build: .
+    container_name: student_api_web
+    command: gunicorn student_api.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
     ports:
       - "8000:8000"
-    networks:
-      - student_net
-
-  frontend1:
-    build: ./student_frontend
-    container_name: frontend1
-    networks:
-      - student_net
-
-  frontend2:
-    build: ./student_frontend
-    container_name: frontend2
-    networks:
-      - student_net
-
-  frontend3:
-    build: ./student_frontend
-    container_name: frontend3
-    networks:
-      - student_net
-
-  nginx:
-    image: nginx:latest
-    container_name: load_balancer
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-    depends_on:
-      - frontend1
-      - frontend2
-      - frontend3
-    networks:
-      - student_net
-
-networks:
-  student_net:
-    driver: bridge
+    env_file:
+      - .env

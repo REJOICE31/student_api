@@ -2,12 +2,64 @@ version: "3.9"
 
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: student_api_web
     command: gunicorn student_api.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - .:/app
-    ports:
-      - "8000:8000"
     env_file:
       - .env
+    expose:
+      - "8000"
+    networks:
+      - student_net
+
+  frontend1:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend1
+    expose:
+      - "80"
+    networks:
+      - student_net
+
+  frontend2:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend2
+    expose:
+      - "80"
+    networks:
+      - student_net
+
+  frontend3:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend3
+    expose:
+      - "80"
+    networks:
+      - student_net
+
+  nginx:
+    image: nginx:alpine
+    container_name: load_balancer
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend1
+      - frontend2
+      - frontend3
+    networks:
+      - student_net
+
+networks:
+  student_net:
+    driver: bridge

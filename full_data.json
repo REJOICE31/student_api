@@ -1,0 +1,933 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-03-29T00:50:32.822Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "agape noel - cyber security",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-03-29T00:51:15.689Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "cathy - roger",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-03-29T00:53:00.157Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "CS 421 - software deployment (Year 4, Semester 2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-03-29T08:17:45.978Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "cathy - roger",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-03-29T08:18:05.084Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "hope - Noel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-03-29T08:18:24.567Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "joel - joseph",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-03-29T08:18:44.642Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "frank - lymo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-03-29T08:21:17.159Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "evance - siyanga",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-03-29T08:21:43.307Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "rejoice - justine",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-03-29T08:21:58.747Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "joel - nanauka",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-03-29T08:22:50.151Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "chriss - mauki",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-03-29T08:24:09.399Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Rehema - kissvan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-03-29T08:25:45.159Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "CP 422 - artificial intelligence (Year 4, Semester 2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-03-29T08:27:54.098Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "cp 226 - operating system (Year 2, Semester 2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-03-29T08:28:32.017Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "CP 312 - python (Year 3, Semester 1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-03-29T08:29:15.036Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "CP 318 - computer graphics (Year 3, Semester 1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-03-29T08:30:56.575Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "MT 1112 - calculus (Year 1, Semester 1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-03-29T08:31:38.936Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "LG 102 - communication skills (Year 1, Semester 1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-03-29T08:32:35.378Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "IA 124 - introduction to IT security (Year 1, Semester 2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-03-29T11:00:13.605Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Rehema kissvan - Software engineering",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-03-29T11:04:00.324Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Cathy Roger - computer science",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-03-29T11:04:35.879Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Cathy Roger - computer science",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-03-29T11:05:15.854Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "chriss mauki - computer engineering",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-03-29T11:05:43.619Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "evance siyanga - cyber security",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-03-29T11:06:18.777Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "frank lymo - telecommunication engineering",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-03-29T11:06:40.287Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "hope Noel - telecommunication engineering",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-03-29T11:07:31.620Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "joel nanauka - computer science",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-03-29T11:08:05.667Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "joel joseph - cyber security",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-03-29T11:08:45.279Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "rejoice justine - software engineering",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Program\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add student",
+    "content_type": 7,
+    "codename": "add_student"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change student",
+    "content_type": 7,
+    "codename": "change_student"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete student",
+    "content_type": 7,
+    "codename": "delete_student"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view student",
+    "content_type": 7,
+    "codename": "view_student"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add subject",
+    "content_type": 8,
+    "codename": "add_subject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change subject",
+    "content_type": 8,
+    "codename": "change_subject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete subject",
+    "content_type": 8,
+    "codename": "delete_subject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view subject",
+    "content_type": 8,
+    "codename": "view_subject"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$j39mzRp0P5biPE1V7oWiU9$om5dCLmqTVwQXopj+XGvVTuMyEmQZnwl2YbeVOAf5E0=",
+    "last_login": "2025-03-29T11:01:32.176Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-03-29T00:49:29.678Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "api",
+    "model": "student"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "api",
+    "model": "subject"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3c6l24ppmf6cogizlq6kclmn8gikc531",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSE8ChaX7v0GMjAzUjWQlHZl_HfbpAvd3nPueYsI61Li2mmOE4qL0OL0uyXIT6o7wAfUe5O51WWektwVedAubw3pdT3cv0CBXrZ38MqyG10wIVlKCB609ojJ0RYJxuQhOweD4sBEZ4ZsR6Ws8qgYNGvx-QLyTjiC:1tyTwS:EE7fJLKsceCpcJymuuv00K0b1P49b8irPdSdC4hUif0",
+    "expire_date": "2025-04-12T11:01:32.183Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e2ah395mzzwkok9yq8i1ijtf079u6pzm",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSE8ChaX7v0GMjAzUjWQlHZl_HfbpAvd3nPueYsI61Li2mmOE4qL0OL0uyXIT6o7wAfUe5O51WWektwVedAubw3pdT3cv0CBXrZ38MqyG10wIVlKCB609ojJ0RYJxuQhOweD4sBEZ4ZsR6Ws8qgYNGvx-QLyTjiC:1tyTuJ:qGQsWXaHyFdGKi8AYGwVNFhhFkvkN7Gt_bN3Y1M85iU",
+    "expire_date": "2025-04-12T10:59:19.285Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yi5vz1eehjupkkm82f77gyt0ik8ky7u3",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSE8ChaX7v0GMjAzUjWQlHZl_HfbpAvd3nPueYsI61Li2mmOE4qL0OL0uyXIT6o7wAfUe5O51WWektwVedAubw3pdT3cv0CBXrZ38MqyG10wIVlKCB609ojJ0RYJxuQhOweD4sBEZ4ZsR6Ws8qgYNGvx-QLyTjiC:1tyKOH:lVoZHWodFQKWlrwS5yeDsiM20iZbnuIyL6dHAXRQsXo",
+    "expire_date": "2025-04-12T00:49:37.982Z"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 1,
+  "fields": {
+    "name": "agape noel",
+    "program": "cyber security"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 2,
+  "fields": {
+    "name": "Cathy Roger",
+    "program": "computer science"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 3,
+  "fields": {
+    "name": "hope Noel",
+    "program": "telecommunication engineering"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 4,
+  "fields": {
+    "name": "joel joseph",
+    "program": "cyber security"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 5,
+  "fields": {
+    "name": "frank lymo",
+    "program": "telecommunication engineering"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 6,
+  "fields": {
+    "name": "evance siyanga",
+    "program": "cyber security"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 7,
+  "fields": {
+    "name": "rejoice justine",
+    "program": "software engineering"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 8,
+  "fields": {
+    "name": "joel nanauka",
+    "program": "computer science"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 9,
+  "fields": {
+    "name": "chriss mauki",
+    "program": "computer engineering"
+  }
+},
+{
+  "model": "api.student",
+  "pk": 10,
+  "fields": {
+    "name": "Rehema kissvan",
+    "program": "Software engineering"
+  }
+},
+{
+  "model": "api.subject",
+  "pk": 1,
+  "fields": {
+    "name": "software deployment",
+    "code": "CS 421",
+    "year": 4,
+    "semester": 2
+  }
+},
+{
+  "model": "api.subject",
+  "pk": 2,
+  "fields": {
+    "name": "artificial intelligence",
+    "code": "CP 422",
+    "year": 4,
+    "semester": 2
+  }
+},
+{
+  "model": "api.subject",
+  "pk": 3,
+  "fields": {
+    "name": "operating system",
+    "code": "cp 226",
+    "year": 2,
+    "semester": 2
+  }
+},
+{
+  "model": "api.subject",
+  "pk": 4,
+  "fields": {
+    "name": "python",
+    "code": "CP 312",
+    "year": 3,
+    "semester": 1
+  }
+},
+{
+  "model": "api.subject",
+  "pk": 5,
+  "fields": {
+    "name": "computer graphics",
+    "code": "CP 318",
+    "year": 3,
+    "semester": 1
+  }
+},
+{
+  "model": "api.subject",
+  "pk": 6,
+  "fields": {
+    "name": "calculus",
+    "code": "MT 1112",
+    "year": 1,
+    "semester": 1
+  }
+},
+{
+  "model": "api.subject",
+  "pk": 7,
+  "fields": {
+    "name": "communication skills",
+    "code": "LG 102",
+    "year": 1,
+    "semester": 1
+  }
+},
+{
+  "model": "api.subject",
+  "pk": 8,
+  "fields": {
+    "name": "introduction to IT security",
+    "code": "IA 124",
+    "year": 1,
+    "semester": 2
+  }
+}
+]

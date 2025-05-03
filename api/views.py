@@ -1,4 +1,3 @@
-
 import json
 from django.shortcuts import render
 from rest_framework import generics
@@ -26,11 +25,11 @@ class StudentListView(generics.ListAPIView):
             }
         }
         
-        # Check for format parameter or accept header
+        # Check for format parameter or accept header for JSON response
         if request.accepted_renderer.format == 'json' or request.query_params.get('format') == 'json':
             return Response(response_data)
         
-        # Render HTML template with JSON data
+        # Render HTML template with JSON data if requested
         json_data = json.dumps(response_data)
         return render(request, 'api/students.html', {'json_data': json_data})
 
@@ -58,34 +57,10 @@ class SubjectListView(generics.ListAPIView):
             }
         }
         
-        # Check for format parameter or accept header
+        # Check for format parameter or accept header for JSON response
         if request.accepted_renderer.format == 'json' or request.query_params.get('format') == 'json':
             return Response(response_data)
         
-        # Render HTML template with JSON data
+        # Render HTML template with JSON data if requested
         json_data = json.dumps(response_data)
         return render(request, 'api/subjects.html', {'json_data': json_data})
-
-# class SubjectListView(generics.ListAPIView):
-#     """API endpoint that allows subjects to be viewed."""
-#     queryset = Subject.objects.all().order_by('year', 'semester', 'code')
-#     serializer_class = SubjectSerializer
-
-#     def list(self, request, *args, **kwargs):
-#         """Override list method to group subjects by year."""
-#         queryset = self.get_queryset()
-#         serializer = self.get_serializer(queryset, many=True)
-        
-#         # Group subjects by year
-#         subjects_by_year = defaultdict(list)
-#         for subject in serializer.data:
-#             year_key = f"Year {subject['year']}"
-#             subjects_by_year[year_key].append(subject)
-        
-#         return Response({
-#             'status': 'success',
-#             'data': {
-#                 'program': 'Software Engineering',
-#                 'subjects': dict(subjects_by_year)
-#             }
-#         })
